@@ -212,6 +212,7 @@ body {
 
 .project-content-link {
     color: #426b9b;
+    margin-top: 10px;
 }
 
 .site-footer {
@@ -605,6 +606,10 @@ body {
 
     .project-card img {
         height: 220px;
+    }
+
+    .project-content-link {
+        text-align: center;
     }
 
     .project-gallery-three {
