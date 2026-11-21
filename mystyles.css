@@ -216,7 +216,6 @@ body {
 
 .project-content .project-content-link p {
     color: #426b9b;
-    font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
 }
