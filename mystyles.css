@@ -16,6 +16,10 @@ body {
     line-height: 1.7;
 }
 
+.header-special {
+    font-family: "Instrument Serif", serif;
+}
+
 .site-header {
     background-color: #ffffff;
     padding: 18px 8%;
@@ -65,7 +69,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 55px;
-
     padding: 90px 10%;
     max-width: 1400px;
     margin: auto;
@@ -84,20 +87,8 @@ body {
     box-shadow: -12px 12px 0 #e9d28d;
 }
 
-.header-special {
-    font-family: "Instrument Serif", serif;
-}
-
 .about-content {
     flex: 1.5;
-}
-
-.subtitle {
-    color: #b88b36;
-    font-weight: bold;
-    letter-spacing: 3px;
-    font-size: 0.8rem;
-    margin-bottom: 12px;
 }
 
 .about-content h1 {
@@ -108,6 +99,14 @@ body {
 
 .about-content p {
     margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #b88b36;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
 }
 
 .bonus {
@@ -185,6 +184,7 @@ body {
 }
 
 .project-card a {
+    display: block;
     text-decoration: none;
     color: inherit;
 }
@@ -271,10 +271,6 @@ body {
     padding: 80px 10%;
 }
 
-#love-through-a-prism {
-    margin-bottom: 40px;
-}
-
 .project-gallery-three {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -307,64 +303,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.project-audio-section {
-    background-color: #edf2fa;
-    padding: 45px;
-    border-radius: 20px;
-}
-
-.project-audio-section h2 {
-    font-family: "Instrument Serif", serif;
-    font-size: 2.5rem;
-    color: #426b9b;
-    margin-bottom: 5px;
-}
-
-.project-audio-section .section-intro {
-    margin-bottom: 30px;
-}
-
-.project-page-audio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.audio-card {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    border-bottom: 4px solid #e9d28d;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease;
-}
-
-.audio-card:hover {
-    transform: translateY(-5px);
-}
-
-.audio-number {
-    display: block;
-    color: #b88b36;
-    font-weight: bold;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-}
-
-.audio-card h3 {
-    color: #426b9b;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: 1.4;
-}
-
-.audio-card audio {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-}
-
 .project-hero-portrait {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -384,6 +322,151 @@ body {
     height: auto;
     border-radius: 15px;
     box-shadow: -12px 12px 0 #e9d28d;
+}
+
+.ans-project-page {
+    max-width: 1400px;
+    margin: auto;
+    padding: 80px 10%;
+}
+
+.ans-project-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 75px;
+}
+
+.ans-project-image {
+    width: 100%;
+    min-width: 0;
+}
+
+.ans-project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: -12px 12px 0 #e9d28d;
+}
+
+.ans-project-desc {
+    min-width: 0;
+}
+
+.ans-project-desc .subtitle {
+    color: #b88b36;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.ans-project-desc h1 {
+    font-family: "Instrument Serif", serif;
+    color: #426b9b;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.ans-project-desc p:not(.subtitle) {
+    color: #555e6d;
+    margin-bottom: 18px;
+}
+
+.ans-audio-section {
+    background-color: #edf2fa;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.ans-audio-section h2 {
+    font-family: "Instrument Serif", serif;
+    font-size: 2.5rem;
+    color: #426b9b;
+    margin-bottom: 5px;
+}
+
+.ans-audio-intro {
+    color: #777f8e;
+    margin-bottom: 30px;
+}
+
+.ans-audio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.ans-audio-card {
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border-bottom: 4px solid #e9d28d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.ans-audio-card:hover {
+    transform: translateY(-5px);
+}
+
+.ans-audio-number {
+    display: block;
+    color: #b88b36;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.ans-audio-card h3 {
+    color: #426b9b;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.ans-audio-card audio {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .project-hero-portrait {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .project-gallery-portrait {
+        max-width: 350px;
+    }
+
+    .ans-project-hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 55px;
+    }
+
+    .ans-project-image {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .ans-project-desc {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .ans-audio-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -415,7 +498,7 @@ body {
     .about-content h1 {
         font-size: 30px;
     }
-
+    
     .interests-section,
     .projects-section {
         padding: 55px 7%;
@@ -435,33 +518,30 @@ body {
         padding: 45px 7% 20px;
     }
 
-    .project-page {
+
+    .project-page,
+    .ans-project-page {
         padding: 50px 7%;
     }
-    
+
     .project-gallery-three {
         gap: 12px;
     }
 
-    .project-audio-section {
-        padding: 25px;
+    .ans-project-desc h1 {
+        font-size: 2.5rem;
     }
 
-    .project-audio-section h2 {
+    .ans-audio-section {
+        padding: 30px;
+    }
+
+    .ans-audio-section h2 {
         font-size: 2rem;
     }
 
-    .audio-card {
+    .ans-audio-card {
         padding: 22px;
-    }
-
-    .project-hero-portrait {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .project-gallery-portrait {
-        max-width: 350px;
     }
 }
 
@@ -479,14 +559,15 @@ body {
         font-size: 14px;
     }
 
-    .project-page {
+    .project-page,
+    .ans-project-page {
         padding: 35px 5%;
     }
 
     .project-card img {
         height: 220px;
     }
-    
+
     .project-gallery-three {
         grid-template-columns: 1fr;
     }
@@ -495,7 +576,11 @@ body {
         grid-column: auto;
     }
 
-    .project-audio-section {
+    .ans-project-desc h1 {
+        font-size: 2.1rem;
+    }
+
+    .ans-audio-section {
         padding: 20px 15px;
     }
 }
@@ -506,6 +591,7 @@ a:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
