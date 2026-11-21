@@ -1,7 +1,3 @@
-/* ==============================
-   GENERAL STYLES
-============================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +15,6 @@ body {
     color: #303747;
     line-height: 1.7;
 }
-
-/* ==============================
-   NAVIGATION BAR
-============================== */
 
 .site-header {
     background-color: #ffffff;
@@ -62,10 +54,6 @@ body {
 .nav-links a:hover {
     color: #e2ad42;
 }
-
-/* ==============================
-   ABOUT SECTION
-============================== */
 
 .about-section {
     display: flex;
@@ -124,10 +112,6 @@ body {
     border-radius: 5px;
 }
 
-/* ==============================
-   SECTION HEADINGS
-============================== */
-
 .interests-section,
 .projects-section {
     padding: 75px 10%;
@@ -144,10 +128,6 @@ body {
     color: #777f8e;
     margin-bottom: 35px;
 }
-
-/* ==============================
-   THINGS I LOVE
-============================== */
 
 .interests-grid {
     display: grid;
@@ -173,10 +153,6 @@ body {
     color: #426b9b;
     margin-bottom: 12px;
 }
-
-/* ==============================
-   PROJECTS SECTION
-============================== */
 
 .projects-section {
     background-color: #edf2fa;
@@ -223,10 +199,6 @@ body {
 .project-content p {
     color: #555e6d;
 }
-
-/* ==============================
-   CONTACT / FOOTER
-============================== */
 
 .site-footer {
     background-color: #344c6b;
@@ -282,10 +254,6 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     color: #dce3ed;
 }
-
-/* ==============================
-   RESPONSIVE DESIGN
-============================== */
 
 @media screen and (max-width: 768px) {
 
@@ -354,10 +322,6 @@ body {
         height: 220px;
     }
 }
-
-/* =======================
-   ACCESSIBILITY
-======================== */
 
 a:focus-visible {
     outline: 3px solid #e2ad42;
