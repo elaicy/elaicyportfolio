@@ -299,6 +299,64 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
+.project-audio-section {
+    background-color: #edf2fa;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.project-audio-section h2 {
+    font-family: "Instrument Serif", serif;
+    font-size: 2.5rem;
+    color: #426b9b;
+    margin-bottom: 5px;
+}
+
+.project-audio-section .section-intro {
+    margin-bottom: 30px;
+}
+
+.project-page-audio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.audio-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border-bottom: 4px solid #e9d28d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.audio-card:hover {
+    transform: translateY(-5px);
+}
+
+.audio-number {
+    display: block;
+    color: #b88b36;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.audio-card h3 {
+    color: #426b9b;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.audio-card audio {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
 .project-hero-portrait {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -377,6 +435,18 @@ body {
         gap: 12px;
     }
 
+    .project-audio-section {
+        padding: 25px;
+    }
+
+    .project-audio-section h2 {
+        font-size: 2rem;
+    }
+
+    .audio-card {
+        padding: 22px;
+    }
+
     .project-hero-portrait {
         grid-template-columns: 1fr;
         gap: 35px;
@@ -415,6 +485,10 @@ body {
 
     .project-gallery-three img:last-child {
         grid-column: auto;
+    }
+
+    .project-audio-section {
+        padding: 20px 15px;
     }
 }
 
