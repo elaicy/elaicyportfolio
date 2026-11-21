@@ -19,7 +19,7 @@
         <nav class="navbar" aria-label="Main navigation">
             <h2 class="logo">ELAICY</h2>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#interests">Interests</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -27,35 +27,61 @@
         </nav>
     </header>
 
-    <main>
-      <div class="project-page-image">
-        <img src="images/ang namamanang sakit.png" alt="Ang Namamanang Sakit audio drama project" loading="lazy">
-      </div>
-      <div class="project-page-audio">
-        <div class="audio-title">
-          <h4>Part 1-3: First &amp; Second Generation</h4>
-          <audio src="audio/ans-part123.mp3"></audio>
-        </div>
-        <div class="audio-title">
-          <h4>Part 1-3: Second &amp; Third Generation</h4>
-          <audio src="audio/ans-part45.mp3"></audio>
-        </div>
-        <div class="audio-title">
-          <h4>Part 1-3: Third &amp; Fourth Generation</h4>
-          <audio src="audio/ans-part6.mp3"></audio>
-        </div>
-      <div class="project-page-desc">
-        <h3>Ang Namamanang Sakit</h3>
-        <p>
-          An audio drama that tackles the theme of
-          generational trauma, featuring scenes 
-          depicting child abuse, with a story 
-          spanning through four generations.
-
-          I was the director, lead scriptwriter,
-          and lead audio engineer.
-        </p>
-      </div>
+    <main class="project-page">
+        <section class="project-hero">
+            <div class="project-page-image">
+                <img src="images/ang namamanang sakit.png"
+                     alt="Ang Namamanang Sakit audio drama project">
+            </div>
+    
+            <div class="project-page-desc">
+                <p class="subtitle">AUDIO DRAMA PROJECT</p>
+                <h1 class="header-special">Ang Namamanang Sakit</h1>
+                <p>
+                    An audio drama that tackles the theme of
+                    generational trauma, featuring scenes depicting
+                    child abuse, with a story spanning through
+                    four generations.
+                </p>
+                <p>
+                    I was the director, lead scriptwriter,
+                    and lead audio engineer.
+                </p>
+            </div>
+        </section>
+    
+        <section class="project-audio-section">
+            <h2 class="header-special">Listen to the Project</h2>
+            <p class="section-intro">
+                Explore the story through its different generations.
+            </p>
+            <div class="project-page-audio">
+                <div class="audio-card">
+                    <span class="audio-number">01</span>
+                    <h3>First &amp; Second Generation</h3>
+                    <audio controls preload="metadata">
+                        <source src="audio/ans-part123.mp3" type="audio/mpeg">
+                        Your browser does not support audio playback.
+                    </audio>
+                </div>
+                <div class="audio-card">
+                    <span class="audio-number">02</span>
+                    <h3>Second &amp; Third Generation</h3>
+                    <audio controls preload="metadata">
+                        <source src="audio/ans-part45.mp3" type="audio/mpeg">
+                        Your browser does not support audio playback.
+                    </audio>
+                </div>
+                <div class="audio-card">
+                    <span class="audio-number">03</span>
+                    <h3>Third &amp; Fourth Generation</h3>
+                    <audio controls preload="metadata">
+                        <source src="audio/ans-part6.mp3" type="audio/mpeg">
+                        Your browser does not support audio playback.
+                    </audio>
+                </div>
+            </div>
+        </section>
     </main>
 
      <footer class="site-footer" id="contact">
