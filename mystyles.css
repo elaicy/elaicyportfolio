@@ -210,9 +210,18 @@ body {
     color: #555e6d;
 }
 
-.project-content-link p {
-    color: #426b9b;
+.project-content-link {
     margin-top: 10px;
+}
+
+.project-content .project-content-link p {
+    color: #426b9b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-content .project-content-link:hover {
+    color: #b88b36;
 }
 
 .site-footer {
