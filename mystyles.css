@@ -271,6 +271,33 @@ body {
     padding: 80px 10%;
 }
 
+.project-page-desc {
+    min-width: 0;
+}
+
+.project-page-desc .subtitle {
+    color: #b88b36;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.project-page-desc h1 {
+    font-family: "Instrument Serif", serif;
+    color: #426b9b;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.project-page-desc p:not(.subtitle) {
+    color: #555e6d;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
 .project-gallery-three {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -448,6 +475,10 @@ body {
         max-width: 350px;
     }
 
+    .project-page-desc h1 {
+        font-size: 2.5rem;
+    }
+
     .ans-project-hero {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -526,6 +557,10 @@ body {
 
     .project-gallery-three {
         gap: 12px;
+    }
+
+    .project-page-desc h1 {
+        font-size: 2.1rem;
     }
 
     .ans-project-desc h1 {
