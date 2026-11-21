@@ -220,7 +220,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.project-content:hover .project-content-link p {
+.project-card:hover .project-content .project-content-link p {
     color: #b88b36;
 }
 
