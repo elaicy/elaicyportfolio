@@ -38,6 +38,11 @@ body {
     font-size: 2.5rem;
 }
 
+.logo a {
+    color: #426b9b;
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -179,10 +184,9 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.product-card a,
-.product-card a h3,
-.product-card a p, {
+.project-card a {
     text-decoration: none;
+    color: inherit;
 }
 
 .project-card img {
