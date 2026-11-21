@@ -1,0 +1,378 @@
+/* ==============================
+   GENERAL STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fc;
+    color: #303747;
+    line-height: 1.7;
+}
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+
+.site-header {
+    background-color: #ffffff;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #426b9b;
+    font-family: "Instrument Serif", serif;
+    font-size: 2.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #303747;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e2ad42;
+}
+
+/* ==============================
+   ABOUT SECTION
+============================== */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+
+    padding: 90px 10%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.profile-pic {
+    flex: 1;
+    max-width: 380px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: -12px 12px 0 #e9d28d;
+}
+
+.header-special {
+    font-family: "Instrument Serif", serif;
+}
+
+.about-content {
+    flex: 1.5;
+}
+
+.subtitle {
+    color: #b88b36;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.about-content h1 {
+    color: #426b9b;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.bonus {
+    background-color: #edf2fa;
+    padding: 15px;
+    border-left: 4px solid #e2ad42;
+    border-radius: 5px;
+}
+
+/* ==============================
+   SECTION HEADINGS
+============================== */
+
+.interests-section,
+.projects-section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.interests-section h2,
+.projects-section h2 {
+    color: #426b9b;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    color: #777f8e;
+    margin-bottom: 35px;
+}
+
+/* ==============================
+   THINGS I LOVE
+============================== */
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+.interest-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border-bottom: 5px solid #e9d28d;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-7px);
+}
+
+.interest-card h3 {
+    color: #426b9b;
+    margin-bottom: 12px;
+}
+
+/* ==============================
+   PROJECTS SECTION
+============================== */
+
+.projects-section {
+    background-color: #edf2fa;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    color: #426b9b;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.project-content p {
+    color: #555e6d;
+}
+
+/* ==============================
+   CONTACT / FOOTER
+============================== */
+
+.site-footer {
+    background-color: #344c6b;
+    color: #ffffff;
+    padding: 60px 10% 25px;
+}
+
+.site-footer h2 {
+    color: #f1d58e;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.site-footer > p {
+    margin-bottom: 30px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.contact-grid h3 {
+    color: #f1d58e;
+    margin-bottom: 15px;
+}
+
+.contact-grid ul {
+    list-style: none;
+}
+
+.contact-grid li {
+    margin-bottom: 12px;
+}
+
+.contact-grid a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-grid a:hover {
+    color: #f1d58e;
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #dce3ed;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media screen and (max-width: 768px) {
+
+    .site-header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 55px 7%;
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 300px;
+    }
+
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+    .interests-section,
+    .projects-section {
+        padding: 55px 7%;
+    }
+
+    .interests-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .site-footer {
+        padding: 45px 7% 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .project-card img {
+        height: 220px;
+    }
+}
+
+/* =======================
+   ACCESSIBILITY
+======================== */
+
+a:focus-visible {
+    outline: 3px solid #e2ad42;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
