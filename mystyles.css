@@ -271,6 +271,10 @@ body {
     padding: 80px 10%;
 }
 
+.project-page-desc p #love-through-a-prism {
+    margin-bottom: 35px;
+}
+
 .project-gallery-three {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
